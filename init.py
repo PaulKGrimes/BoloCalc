@@ -5,9 +5,11 @@ import os
 curr_dir = os.path.dirname(__file__)
 install_file = os.path.join(
     curr_dir, 'auxil', 'install_packages.py')
+
 if sy.version_info[0] == 3:
     if sy.version_info[1] >= 7:
-        os.system("python3 %s" % (install_file))
+        python_cmd = os.path.split(sy.executable)[-1].split(".")[0]
+        os.system("%s %s" % (python_cmd, install_file))
     else:
         sy.stdout.write("\n***** Python 3.7 or higher required for "
                         "BoloCalc v0.10 (Sep 2019) and beyond *****\n\n")
@@ -44,7 +46,7 @@ else:
 # Download atmosphere files
 update_atm_file = os.path.join(
     os.path.dirname(__file__), "update_atm.py")
-os.system("python3 %s" % (update_atm_file))
+os.system("%s %s" % (python_cmd, update_atm_file))
 atm_files_dir = os.path.join(
     os.path.dirname(__file__), "src", "atmFiles")
 if os.path.exists(atm_files_dir):
