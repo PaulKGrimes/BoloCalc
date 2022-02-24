@@ -15,6 +15,7 @@
 
 # Ignore all experiment directories
 *Experiments/*
+*RawExpt/*
 !*Experiments/importExperiment.py
 
 # OSX style files
