@@ -28,6 +28,9 @@
 # Ignore iCloud files
 *.icloud
 
+# Ignore Sphinx documentation builds
+docs/_build
+
 # Ignore everything in the config directory except sim config files
 config/*.txt
 !config/simInputs.txt
