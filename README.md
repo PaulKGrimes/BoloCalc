@@ -6,7 +6,7 @@ BoloCalc is a sensitivity calculator for cosmic microwave background (CMB) instr
 
 A user manual, which includes a "Quick Start Guide," can be found in the MANUAL/ directory.
 
-This code is updated frequency, and therefore we encourage the user to git pull often.
+This version of the code has been updated by Paul Grimes to include Sphinx auto-generated documentation of the Python code.
 
 Please cite https://arxiv.org/abs/1806.04316 if you use this code to generate NETs for publication.
 
