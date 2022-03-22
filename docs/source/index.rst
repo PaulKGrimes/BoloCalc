@@ -6,11 +6,38 @@
 Welcome to BoloCalc's documentation!
 ====================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. autosummary::
+    :recursive:
+    :toctree: modules
 
-   modules
+    src.band
+    src.camera
+    src.channel
+    src.detector
+    src.detectorArray
+    src.display
+    src.distribution
+    src.experiment
+    src.foregrounds
+    src.loader
+    src.log
+    src.noise
+    src.observation
+    src.observationSet
+    src.optic
+    src.opticalChain
+    src.parameter
+    src.physics
+    src.profile
+    src.scanStrategy
+    src.sensitivity
+    src.simulation
+    src.sky
+    src.standardParam
+    src.telescope
+    src.unit
+    src.unpack
+    src.vary
 
 Indices and tables
 ==================
